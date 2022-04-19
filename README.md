@@ -2,7 +2,7 @@
   <img src="./.github/images/logo.svg" />
 </h1>
 
-<h4 align="center">A Todo React Native application.</h4>
+<h4 align="center">A fake gaming store.</h4>
 
 <p align="center">
   <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/caiotracera/wongames?color=F231A5">
