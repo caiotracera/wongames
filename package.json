@@ -16,7 +16,7 @@
     "commit": "cz",
     "test": "jest --maxWorkers=50%",
     "test:watch": "jest --watch --maxWorkers=25%",
-    "test:ci": "jest --runInBand",
+    "test:ci": "jest --runInBand --findRelatedTests --bail --passWithNoTests",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -71,7 +71,7 @@
     "./src/**/*.{ts,js,jsx,tsx}": [
       "npm run lint --fix",
       "npm run format",
-      "npm run test --findRelatedTests --bail"
+      "npm run test:ci"
     ]
   },
   "config": {
