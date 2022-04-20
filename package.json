@@ -17,7 +17,7 @@
     "start": "next start",
     "storybook": "start-storybook -p 6006",
     "test": "jest --maxWorkers=50%",
-    "test:ci": "jest --runInBand --findRelatedTests --bail --passWithNoTests",
+    "test:ci": "jest --runInBand --bail --passWithNoTests",
     "test:watch": "jest --watch --maxWorkers=25%",
     "type-check": "tsc"
   },
