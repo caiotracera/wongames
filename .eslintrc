@@ -2,32 +2,40 @@
   "plugins": ["prettier"],
   "extends": ["next", "next/core-web-vitals", "prettier"],
   "rules": {
-    "prettier/prettier": "error",
     "camelcase": "off",
-    "import/prefer-default-export": "off",
-    "react/jsx-filename-extension": "off",
-    "react/jsx-props-no-spreading": "off",
-    "react/no-unused-prop-types": "off",
-    "react/require-default-props": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
       {
-        "ts": "never",
-        "tsx": "never",
         "js": "never",
-        "jsx": "never"
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
       }
     ],
-    "quotes": "off",
+    "import/prefer-default-export": "off",
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
-        "components": ["Link"],
-        "specialLink": ["hrefLeft", "hrefRight"],
-        "aspects": ["invalidHref", "preferButton"]
+        "aspects": [
+          "invalidHref",
+          "preferButton"
+        ],
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "hrefLeft",
+          "hrefRight"
+        ]
       }
-    ]
+    ],
+    "prettier/prettier": "error",
+    "quotes": "off",
+    "react/jsx-filename-extension": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-unused-prop-types": "off",
+    "react/require-default-props": "off"
   },
   "overrides": [
     {
@@ -48,7 +56,8 @@
           {
             "avoidEscape": true
           }
-        ]
+        ],
+        "@typescript-eslint/no-non-null-assertion": "off"
       }
     }
   ]
