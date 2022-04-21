@@ -11,6 +11,8 @@ module.exports = {
   collectCoverageFrom: [
     'src/**/*.ts(x)?',
     '!src/**/*.stories.tsx',
+    '!src/**/types.ts',
+    '!src/types/**/*',
     '!src/pages/**/*.tsx',
     '!src/styles/**/*.ts',
     '!src/utils/apollo.ts',
