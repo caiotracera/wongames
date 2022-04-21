@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@styled-icons/material-outlined": "10.34.0",
+    "@styled-icons/remix-fill": "10.18.0",
     "next": "12.1.4",
     "react": "18.0.0",
     "react-dom": "18.0.0",
