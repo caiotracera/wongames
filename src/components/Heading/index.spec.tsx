@@ -39,4 +39,28 @@ describe('<Heading />', () => {
       },
     );
   });
+
+  it('should render a heading with a small size', () => {
+    renderWithTheme(<Heading size="small">Won Games</Heading>);
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
+      'font-size': '1.6rem',
+    });
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyleRule(
+      'width',
+      '3rem',
+      {
+        modifier: '::after',
+      },
+    );
+  });
+
+  it('should render a heading with a medium size by default', () => {
+    renderWithTheme(<Heading>Won Games</Heading>);
+
+    expect(screen.getByRole('heading', { name: /won games/i })).toHaveStyle({
+      'font-size': '2rem',
+    });
+  });
 });
