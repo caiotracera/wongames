@@ -6,6 +6,7 @@ export function Heading({
   color = 'white',
   lineLeft = false,
   lineBottom = false,
+  lineColor = 'primary',
   size = 'medium',
 }: HeadingProps) {
   return (
@@ -13,6 +14,7 @@ export function Heading({
       color={color}
       lineLeft={lineLeft}
       lineBottom={lineBottom}
+      lineColor={lineColor}
       size={size}
     >
       {children}
