@@ -29,3 +29,12 @@ WithIcon.args = {
   icon: <AddShoppingCart />,
   size: 'small',
 };
+
+export const AsLink: Story<ButtonProps> = (args) => <Button {...args} />;
+
+AsLink.args = {
+  size: 'large',
+  children: 'Buy now',
+  as: 'a',
+  href: '/link',
+};
