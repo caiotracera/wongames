@@ -1,6 +1,8 @@
 import { BannerProps } from '@/components/Banner/types';
-import * as S from '@/components/Banner/styles';
 import { Button } from '@/components/Button';
+import { Ribbon } from '@/components/Ribbon';
+
+import * as S from '@/components/Banner/styles';
 
 export function Banner({
   img,
@@ -8,6 +10,9 @@ export function Banner({
   subtitle,
   buttonLabel,
   buttonLink,
+  ribbon,
+  ribbonSize = 'normal',
+  ribbonColor = 'primary',
 }: BannerProps) {
   return (
     <S.Wrapper>
@@ -21,6 +26,12 @@ export function Banner({
           {buttonLabel}
         </Button>
       </S.Caption>
+
+      {!!ribbon && (
+        <Ribbon size={ribbonSize} color={ribbonColor}>
+          {ribbon}
+        </Ribbon>
+      )}
     </S.Wrapper>
   );
 }
