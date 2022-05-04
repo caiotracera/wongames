@@ -23,10 +23,8 @@ jobs:
 
       - name: Install dependencies (with cache)
         uses: bahmutov/npm-install@v1
-        run: npm install --force
-
-      - name: Check types
-        run: npm run type-check
+        with:
+            install-command: npm install --force
 
       - name: Check linting
         run: npm run lint
