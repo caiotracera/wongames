@@ -81,7 +81,8 @@
     "./src/**/*.{ts,js,jsx,tsx}": [
       "npm run format",
       "npm run lint --fix",
-      "npm run test:ci"
+      "npm run test:ci",
+      "npm run type-check"
     ]
   },
   "config": {
