@@ -22,7 +22,7 @@ jobs:
           node-version: 17.9
 
       - name: Install dependencies
-        run: npm install --force
+        run: npm install
 
       - name: Check types
         run: npm run type-check
