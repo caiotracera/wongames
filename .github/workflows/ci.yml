@@ -32,5 +32,8 @@ jobs:
       - name: Run tests
         run: npm run test:ci
 
+      - name: Check types
+        run: npm run type-check
+
       - name: Check commits messages
         uses: wagoid/commitlint-github-action@v4

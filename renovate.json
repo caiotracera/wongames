@@ -4,11 +4,6 @@
   "stabilityDays": 3,
   "prCreation": "not-pending",
   "labels": ["type: dependencies"],
-  "postUpgradeTasks": {
-    "commands": ["npm install --force"],
-    "fileFilters": ["package-lock.json", "**/*.ts", "**/*.tsx"],
-    "executionMode": "update"
-  },
   "packageRules": [
     {
       "packageNames": ["node"],
