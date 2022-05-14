@@ -24,7 +24,7 @@
   "dependencies": {
     "@styled-icons/material-outlined": "10.34.0",
     "@styled-icons/remix-fill": "10.18.0",
-    "next": "12.1.4",
+    "next": "12.1.6",
     "polished": "4.2.2",
     "react": "18.1.0",
     "react-dom": "18.1.0",
@@ -58,7 +58,7 @@
     "commitizen": "4.2.4",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "8.15.0",
-    "eslint-config-next": "12.1.4",
+    "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "8.5.0",
     "eslint-import-resolver-typescript": "2.7.1",
     "eslint-plugin-prettier": "4.0.0",
