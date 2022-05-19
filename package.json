@@ -78,11 +78,10 @@
     }
   },
   "lint-staged": {
-    "./src/**/*.{ts,js,jsx,tsx}": [
+    "./src/**/*.{ts,tsx}": [
       "npm run format",
       "npm run lint --fix",
-      "npm run test:ci",
-      "npm run type-check"
+      "npm run test:ci"
     ]
   },
   "config": {
