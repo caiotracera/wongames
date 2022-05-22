@@ -1,21 +1,15 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import { Highlight } from '@/components/Highlight';
+import { item } from '@/components/Highlight/mock';
 import { HighlightsProps } from '@/components/Highlight/types';
 
-import RedDeadImg from '@/assets/images/read-dead-img.png';
 import RedDeadFloat from '@/assets/images/red-dead-float.png';
 
 export default {
   title: 'Highlight',
   component: Highlight,
-  args: {
-    title: "Read Dead it's back",
-    subtitle: "Come see John's new adventures",
-    buttonLabel: 'Buy now',
-    buttonLink: '/rdr2',
-    backgroundImage: String(RedDeadImg),
-  },
+  args: item,
   parameters: {
     layout: 'fullscreen',
   },
