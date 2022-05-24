@@ -3,4 +3,5 @@
 . "$(dirname "$0")/common.sh"
 
 npx lint-staged
+echo 'running type-check'
 npx tsc -p ./tsconfig.json --noEmit --skipLibCheck
