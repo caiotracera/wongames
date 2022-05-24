@@ -37,6 +37,23 @@ describe('<Button />', () => {
     });
   });
 
+  it('should render the minimal version', () => {
+    renderWithTheme(<Button minimal>buy now</Button>);
+
+    expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyle({
+      background: 'none',
+      color: '#F231A5',
+    });
+
+    expect(screen.getByRole('button', { name: /buy now/i })).toHaveStyleRule(
+      'background',
+      'none',
+      {
+        modifier: ':hover',
+      },
+    );
+  });
+
   it('should render a fullwidth button', () => {
     renderWithTheme(<Button fullWidth>buy now</Button>);
 
