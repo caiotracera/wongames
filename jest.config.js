@@ -25,6 +25,7 @@ module.exports = {
   moduleNameMapper: {
     '@/utils/(.*)': '<rootDir>/src/utils/$1',
     '@/components/(.*)': '<rootDir>/src/components/$1',
+    '@/templates/(.*)': '<rootDir>/src/templates/$1',
     '@/styles/(.*)': '<rootDir>/src/styles/$1',
   },
 };
