@@ -3,3 +3,4 @@
 . "$(dirname "$0")/common.sh"
 
 npx lint-staged
+npx tsc -p ./tsconfig.json --noEmit --skipLibCheck

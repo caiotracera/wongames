@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle<GlobalStyleProps>`
     }
 
     body {
-      font-family: ${theme.font.family};
+      font-family: ${theme.font.family.default};
       font-size: ${theme.font.sizes.medium}
       font-style: normal;
       font-weight: 400;
