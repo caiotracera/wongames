@@ -1,9 +1,7 @@
-import RedDeadImg from '@/assets/images/read-dead-img.png';
-
 export const item = {
-  title: "Read Dead it's back",
+  title: 'Red Dead is back',
   subtitle: "Come see John's new adventures",
   buttonLabel: 'Buy now',
   buttonLink: '/rdr2',
-  backgroundImage: String(RedDeadImg),
+  backgroundImage: '/img/red-dead-img.png',
 };
