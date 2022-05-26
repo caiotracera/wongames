@@ -5,4 +5,9 @@ export type TextFieldProps = {
   label?: string;
   labelFor?: string;
   initialValue?: string;
+  icon?: React.ReactNode;
 } & InputHTMLAttributes<HTMLInputElement>;
+
+export type InputWrapperProps = {
+  hasIcon?: boolean;
+};
