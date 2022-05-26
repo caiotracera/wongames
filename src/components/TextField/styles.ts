@@ -18,10 +18,20 @@ const wrapperModifiers = {
       }
     }
   `,
+  error: (theme: DefaultTheme) => css`
+    ${InputWrapper} {
+      border-color: ${theme.colors.red};
+    }
+    ${Icon},
+    ${Label} {
+      color: ${theme.colors.red};
+    }
+  `,
 };
 
 export const Wrapper = styled.div<WrapperProps>`
-  ${({ theme, disabled }) => css`
+  ${({ theme, error, disabled }) => css`
+    ${error && wrapperModifiers.error(theme)}
     ${disabled && wrapperModifiers.disabled(theme)}
   `}
 `;
@@ -72,5 +82,12 @@ export const Input = styled.input<InputProps>`
     border: 0;
     outline: none;
     width: 100%;
+  `}
+`;
+
+export const Error = styled.p`
+  ${({ theme }) => css`
+    color: ${theme.colors.red};
+    font-size: ${theme.font.sizes.xsmall};
   `}
 `;

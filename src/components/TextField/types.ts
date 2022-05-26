@@ -8,9 +8,10 @@ export type TextFieldProps = {
   icon?: React.ReactNode;
   iconPosition?: 'left' | 'right';
   disabled?: boolean;
+  error?: string;
 } & InputHTMLAttributes<HTMLInputElement>;
 
-export type WrapperProps = Pick<TextFieldProps, 'disabled'>;
+export type WrapperProps = Pick<TextFieldProps, 'disabled' | 'error'>;
 
 export type InputProps = Pick<TextFieldProps, 'iconPosition'>;
 
