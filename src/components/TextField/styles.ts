@@ -1,4 +1,48 @@
-import styled, { css } from 'styled-components';
+import styled, { css, DefaultTheme } from 'styled-components';
+
+import {
+  IconProps,
+  InputProps,
+  WrapperProps,
+} from '@/components/TextField/types';
+
+const wrapperModifiers = {
+  disabled: (theme: DefaultTheme) => css`
+    ${Label},
+    ${Input},
+    ${Icon} {
+      cursor: not-allowed;
+      color: ${theme.colors.gray};
+      &::placeholder {
+        color: currentColor;
+      }
+    }
+  `,
+  error: (theme: DefaultTheme) => css`
+    ${InputWrapper} {
+      border-color: ${theme.colors.red};
+    }
+    ${Icon},
+    ${Label} {
+      color: ${theme.colors.red};
+    }
+  `,
+};
+
+export const Wrapper = styled.div<WrapperProps>`
+  ${({ theme, error, disabled }) => css`
+    ${error && wrapperModifiers.error(theme)}
+    ${disabled && wrapperModifiers.disabled(theme)}
+  `}
+`;
+
+export const Label = styled.label`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.small};
+    color: ${theme.colors.black};
+    cursor: pointer;
+  `}
+`;
 
 export const InputWrapper = styled.div`
   ${({ theme }) => css`
@@ -14,12 +58,26 @@ export const InputWrapper = styled.div`
   `}
 `;
 
-export const Input = styled.input`
-  ${({ theme }) => css`
+export const Icon = styled.div<IconProps>`
+  ${({ theme, iconPosition }) => css`
+    display: flex;
+    width: 2.2rem;
+    color: ${theme.colors.gray};
+    order: ${iconPosition === 'right' ? 1 : 0};
+
+    & > svg {
+      width: 100%;
+    }
+  `}
+`;
+
+export const Input = styled.input<InputProps>`
+  ${({ theme, iconPosition }) => css`
     color: ${theme.colors.black};
     font-family: ${theme.font.family};
     font-size: ${theme.font.sizes.medium};
     padding: ${theme.spacings.xxsmall} 0;
+    padding-${iconPosition}: ${theme.spacings.xsmall};
     background: transparent;
     border: 0;
     outline: none;
@@ -27,23 +85,9 @@ export const Input = styled.input`
   `}
 `;
 
-export const Label = styled.label`
+export const Error = styled.p`
   ${({ theme }) => css`
-    font-size: ${theme.font.sizes.small};
-    color: ${theme.colors.black};
-    cursor: pointer;
+    color: ${theme.colors.red};
+    font-size: ${theme.font.sizes.xsmall};
   `}
 `;
-
-export const Icon = styled.div`
-  ${({ theme }) => css`
-    display: flex;
-    width: 2.2rem;
-    color: ${theme.colors.gray};
-    & > svg {
-      width: 100%;
-    }
-  `}
-`;
-
-export const Wrapper = styled.div``;
