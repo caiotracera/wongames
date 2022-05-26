@@ -6,8 +6,9 @@ export type TextFieldProps = {
   labelFor?: string;
   initialValue?: string;
   icon?: React.ReactNode;
+  iconPosition?: 'left' | 'right';
 } & InputHTMLAttributes<HTMLInputElement>;
 
-export type InputWrapperProps = {
-  hasIcon?: boolean;
-};
+export type InputProps = Pick<TextFieldProps, 'iconPosition'>;
+
+export type IconProps = Pick<TextFieldProps, 'iconPosition'>;
