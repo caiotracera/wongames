@@ -5,7 +5,7 @@ import { TextField } from '@/components/TextField';
 import { TextFieldProps } from '@/components/TextField/types';
 
 export default {
-  title: 'TextField',
+  title: 'Form/TextField',
   component: TextField,
   args: {
     label: 'E-mail',
@@ -34,10 +34,6 @@ export const WithIcon: Story<TextFieldProps> = (args) => (
 
 export const withError: Story<TextFieldProps> = (args) => (
   <div style={{ maxWidth: 300, padding: 15 }}>
-    <TextField {...args} />
+    <TextField {...args} error="Ops...something is wrong" />
   </div>
 );
-
-withError.args = {
-  error: 'Ops...something is wrong',
-};
