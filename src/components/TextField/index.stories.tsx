@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react/types-6-0';
+import { Email } from '@styled-icons/material-outlined';
 
 import { TextField } from '@/components/TextField';
 import { TextFieldProps } from '@/components/TextField/types';
@@ -15,11 +16,18 @@ export default {
   },
   argTypes: {
     onInput: { action: 'changed' },
+    icon: { type: 'symbol' },
   },
 } as Meta;
 
 export const Default: Story<TextFieldProps> = (args) => (
   <div style={{ maxWidth: 300, padding: 15 }}>
     <TextField {...args} />
+  </div>
+);
+
+export const WithIcon: Story<TextFieldProps> = (args) => (
+  <div style={{ maxWidth: 300, padding: 15 }}>
+    <TextField {...args} icon={<Email />} />
   </div>
 );

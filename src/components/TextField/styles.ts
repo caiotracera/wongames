@@ -35,4 +35,15 @@ export const Label = styled.label`
   `}
 `;
 
+export const Icon = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    width: 2.2rem;
+    color: ${theme.colors.gray};
+    & > svg {
+      width: 100%;
+    }
+  `}
+`;
+
 export const Wrapper = styled.div``;
