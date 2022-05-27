@@ -42,6 +42,7 @@ export function TextField({
           value={value}
           iconPosition={iconPosition}
           disabled={disabled}
+          aria-label={props.name}
           {...props}
         />
       </S.InputWrapper>
