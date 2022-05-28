@@ -3,12 +3,11 @@ import { AccountCircle, Email, Lock } from '@styled-icons/material-outlined';
 
 import { Button } from '@/components/Button';
 import { TextField } from '@/components/TextField';
-
-import * as S from '@/components/FormSignUp/styles';
+import { FormWrapper, FormLink } from '@/components/Form';
 
 export function FormSignUp() {
   return (
-    <S.Wrapper>
+    <FormWrapper>
       <form>
         <TextField
           name="name"
@@ -42,13 +41,13 @@ export function FormSignUp() {
           Sign up now
         </Button>
 
-        <S.FormLink>
+        <FormLink>
           Already have an account?
           <Link href="/sign-in">
             <a>Sign in</a>
           </Link>
-        </S.FormLink>
+        </FormLink>
       </form>
-    </S.Wrapper>
+    </FormWrapper>
   );
 }
