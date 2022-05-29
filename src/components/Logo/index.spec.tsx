@@ -53,4 +53,10 @@ describe('<Logo />', () => {
       screen.getByRole('img', { name: /Won Games/i }).parentElement,
     ).toHaveStyleRule('width', '5.8rem', { media: '(max-width: 768px)' });
   });
+
+  it('should render the logo with id passed', () => {
+    const { container } = renderWithTheme(<Logo id="myid" />);
+
+    expect(container.querySelector('#paint_linear_myid')).toBeInTheDocument();
+  });
 });
