@@ -2,7 +2,7 @@ import { Email, Lock } from '@styled-icons/material-outlined';
 import Link from 'next/link';
 
 import { TextField } from '@/components/TextField';
-import { Button } from '@/components/Button';
+import Button from '@/components/Button';
 import { FormWrapper, FormLink } from '@/components/Form';
 
 import * as S from '@/components/FormSignIn/styles';
