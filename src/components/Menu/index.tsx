@@ -52,7 +52,9 @@ export function Menu({ username }: MenuProps) {
         {!username && (
           <MediaMatch greaterThan="medium">
             <Link href="/sign-in" passHref>
-              <Button as="a">Sign in</Button>
+              <Button as="a" aria-hidden={isMobileMenuOpen}>
+                Sign in
+              </Button>
             </Link>
           </MediaMatch>
         )}
@@ -76,7 +78,12 @@ export function Menu({ username }: MenuProps) {
         {!username && (
           <S.RegisterBox>
             <Link href="/sign-in" passHref>
-              <Button fullWidth size="large" as="a">
+              <Button
+                fullWidth
+                size="large"
+                as="a"
+                aria-hidden={!isMobileMenuOpen}
+              >
                 Sign in
               </Button>
             </Link>
