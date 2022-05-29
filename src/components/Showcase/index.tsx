@@ -5,7 +5,12 @@ import { Highlight } from '@/components/Highlight';
 import { ShowcaseProps } from '@/components/Showcase/types';
 import * as S from '@/components/Showcase/styles';
 
-export function Showcase({ title, highlight, games }: ShowcaseProps) {
+export function Showcase({
+  title,
+  highlight,
+  games,
+  color = 'white',
+}: ShowcaseProps) {
   return (
     <S.Wrapper>
       {!!title && (
@@ -15,7 +20,7 @@ export function Showcase({ title, highlight, games }: ShowcaseProps) {
       )}
 
       {!!highlight && <Highlight {...highlight} />}
-      {!!games && <GameCardSlider items={games} />}
+      {!!games && <GameCardSlider items={games} color={color} />}
     </S.Wrapper>
   );
 }

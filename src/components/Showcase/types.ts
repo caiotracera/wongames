@@ -5,4 +5,5 @@ export type ShowcaseProps = {
   title?: string;
   highlight?: HighlightsProps;
   games?: GameCardProps[];
+  color?: 'white' | 'black';
 };
