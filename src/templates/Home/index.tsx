@@ -1,8 +1,7 @@
 import { BannerSlider } from '@/components/BannerSlider';
 import { Container } from '@/components/Container';
-import { Footer } from '@/components/Footer';
-import { Menu } from '@/components/Menu';
 import { Showcase } from '@/components/Showcase';
+import { Base } from '@/templates/Base';
 
 import { HomeProps } from '@/templates/Home/types';
 import * as S from '@/templates/Home/styles';
@@ -19,9 +18,8 @@ export function Home({
   freeHighlight,
 }: HomeProps) {
   return (
-    <section>
+    <Base>
       <Container>
-        <Menu />
         <S.SectionBanner>
           <BannerSlider items={banners} />
         </S.SectionBanner>
@@ -45,12 +43,6 @@ export function Home({
         highlight={freeHighlight}
         games={freeGames}
       />
-
-      <S.SectionFooter>
-        <Container>
-          <Footer />
-        </Container>
-      </S.SectionFooter>
-    </section>
+    </Base>
   );
 }
