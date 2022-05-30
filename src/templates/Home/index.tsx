@@ -1,9 +1,6 @@
 import { BannerSlider } from '@/components/BannerSlider';
 import { Container } from '@/components/Container';
 import { Footer } from '@/components/Footer';
-import { GameCardSlider } from '@/components/GameCardSlider';
-import { Heading } from '@/components/Heading';
-import { Highlight } from '@/components/Highlight';
 import { Menu } from '@/components/Menu';
 import { Showcase } from '@/components/Showcase';
 
