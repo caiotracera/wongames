@@ -3,7 +3,7 @@ import media from 'styled-media-query';
 
 import { WrapperProps, LineColors } from '@/components/Heading/types';
 
-const wrapperModifiers = {
+export const wrapperModifiers = {
   small: (theme: DefaultTheme) => css`
     font-size: ${theme.font.sizes.medium};
 
