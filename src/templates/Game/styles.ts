@@ -13,7 +13,7 @@ export const Wrapper = styled.main`
 `;
 
 export const Cover = styled.div<CoverProps>`
-  ${({ theme, src }) => css`
+  ${({ src }) => css`
     position: absolute;
     top: 0;
     right: 0;
