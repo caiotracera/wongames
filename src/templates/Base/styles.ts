@@ -26,5 +26,9 @@ export const SectionFooter = styled.section`
 `;
 
 export const Content = styled.div`
-  flex: 1 0 auto;
+  ${({ theme }) => css`
+    flex: 1 0 auto;
+
+    margin-top: ${theme.spacings.xxlarge};
+  `}
 `;

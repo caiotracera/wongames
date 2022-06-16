@@ -5,10 +5,10 @@ import * as HeadingStyles from '@/components/Heading/styles';
 
 export const SectionBanner = styled.section`
   ${({ theme }) => css`
-    margin: ${theme.spacings.large} calc(-${theme.grid.gutter} / 2);
+    margin: 0 calc(-${theme.grid.gutter} / 2) ${theme.spacings.large};
 
     ${media.greaterThan('medium')`
-      margin: ${theme.spacings.large} 0;
+      margin-bottom: ${theme.spacings.large};
       position: relative;
       z-index: ${theme.layers.base};
     `}
