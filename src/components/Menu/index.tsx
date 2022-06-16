@@ -31,13 +31,21 @@ export function Menu({ username }: MenuProps) {
       </MediaMatch>
 
       <S.LogoWrapper>
-        <Logo hideLabelOnMobile />
+        <Link href="/" passHref>
+          <a>
+            <Logo hideLabelOnMobile />
+          </a>
+        </Link>
       </S.LogoWrapper>
 
       <MediaMatch greaterThan="medium">
         <S.MenuNav>
-          <S.MenuLink href="#">Home</S.MenuLink>
-          <S.MenuLink href="#">Explore</S.MenuLink>
+          <Link href="/" passHref>
+            <S.MenuLink>Home</S.MenuLink>
+          </Link>
+          <Link href="/explore">
+            <S.MenuLink>Explore</S.MenuLink>
+          </Link>
         </S.MenuNav>
       </MediaMatch>
       <S.MenuGroup>
@@ -64,7 +72,9 @@ export function Menu({ username }: MenuProps) {
         <CloseIcon aria-label="Close menu" onClick={handleClickMobileMenu} />
 
         <S.MenuNav>
-          <S.MenuLink href="#">Home</S.MenuLink>
+          <Link href="/" passHref>
+            <S.MenuLink>Home</S.MenuLink>
+          </Link>
           <S.MenuLink href="#">Explore</S.MenuLink>
 
           {!!username && (
