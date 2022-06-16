@@ -1,5 +1,5 @@
 import { BannerProps } from '@/components/Banner/types';
-import Button from '@/components/Button';
+import { Button } from '@/components/Button';
 import { Ribbon } from '@/components/Ribbon';
 
 import * as S from '@/components/Banner/styles';

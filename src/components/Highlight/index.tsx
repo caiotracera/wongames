@@ -1,6 +1,6 @@
 import { HighlightsProps } from '@/components/Highlight/types';
 import * as S from '@/components/Highlight/styles';
-import Button from '@/components/Button';
+import { Button } from '@/components/Button';
 import { Content } from '@/components/Highlight/styles';
 
 export function Highlight({
