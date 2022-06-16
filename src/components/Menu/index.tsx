@@ -8,7 +8,7 @@ import {
   Close as CloseIcon,
 } from '@styled-icons/material-outlined';
 
-import Button from '@/components/Button';
+import { Button } from '@/components/Button';
 import { Logo } from '@/components/Logo';
 import { MediaMatch } from '@/components/MediaMatch';
 

@@ -4,7 +4,7 @@ import {
   FavoriteBorder,
 } from '@styled-icons/material-outlined';
 
-import Button from '@/components/Button';
+import { Button } from '@/components/Button';
 import { Ribbon } from '@/components/Ribbon';
 
 import { GameCardProps } from '@/components/GameCard/types';
