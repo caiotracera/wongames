@@ -2,12 +2,13 @@ import { Base } from '@/templates/Base';
 import { GameInfo } from '@/components/GameInfo';
 
 import { Gallery } from '@/components/Gallery';
-
-import { GameTemplateProps } from '@/templates/Game/types';
-import * as S from '@/templates/Game/styles';
 import { TextContent } from '@/components/TextContent';
 import { GameDetails } from '@/components/GameDetails';
 import { Showcase } from '@/components/Showcase';
+import { Divider } from '@/components/Divider';
+
+import { GameTemplateProps } from '@/templates/Game/types';
+import * as S from '@/templates/Game/styles';
 
 export function GameTemplate({
   cover,
@@ -40,6 +41,7 @@ export function GameTemplate({
 
         <S.SectionGameDetails>
           <GameDetails {...details} />
+          <Divider />
         </S.SectionGameDetails>
 
         <Showcase
