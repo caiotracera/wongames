@@ -18,7 +18,7 @@
   <a href="https://github.com/caiotracera/wongames/issues">
     <img alt="Repository issues" src="https://img.shields.io/github/issues/caiotracera/wongames?color=F231A5">
   </a>
-  <img alt="Codacy" src="https://img.shields.io/codacy/grade/1a8a5eeff3cb4593a28c3f1ddc68e71a?color=F231A5" />
+  <img alt="Codacy" src="https://img.shields.io/codacy/grade/958fd1cb7f3b4bf1995c977fc645cc88?color=F231A5" />
   <img alt="License" src="https://img.shields.io/badge/license-MIT-brightgreen?color=F231A5"/>
 </p>
 
