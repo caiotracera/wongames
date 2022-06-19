@@ -19,7 +19,7 @@ export const getServerSideProps: GetServerSideProps<
 > = async () => {
   return {
     props: {
-      items: [],
+      items: ordersListMock,
     },
   };
 };
