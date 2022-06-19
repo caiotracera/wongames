@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 export function TextField({
   label,
-  labelFor = '',
+  name,
   initialValue = '',
   onInput,
   icon,
@@ -33,7 +33,7 @@ export function TextField({
 
   return (
     <S.Wrapper disabled={disabled} error={error}>
-      {!!label && <S.Label htmlFor={labelFor}>{label}</S.Label>}
+      {!!label && <S.Label htmlFor={name}>{label}</S.Label>}
       <S.InputWrapper>
         {!!icon && <S.Icon iconPosition={iconPosition}>{icon}</S.Icon>}
         <S.Input
@@ -42,7 +42,9 @@ export function TextField({
           value={value}
           iconPosition={iconPosition}
           disabled={disabled}
-          aria-label={props.name}
+          aria-label={name}
+          name={name}
+          {...(label ? { id: name } : {})}
           {...props}
         />
       </S.InputWrapper>
