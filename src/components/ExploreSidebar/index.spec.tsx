@@ -1,11 +1,8 @@
 import { fireEvent, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 
 import { renderWithTheme } from '@/utils/tests/helpers';
 import { ExploreSidebar } from '@/components/ExploreSidebar';
 import { items as exploreSidebarMock } from '@/components/ExploreSidebar/mock';
-import * as S from '@/components/ExploreSidebar/styles';
-import { css } from 'styled-components';
 
 describe('<ExploreSidebar />', () => {
   it('should render the <ExploreSidebar />', () => {
