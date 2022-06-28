@@ -5,7 +5,6 @@ import { renderWithTheme } from '@/utils/tests/helpers';
 import { GamesTemplate } from '@/templates/Games';
 import { items as filterItemsMock } from '@/components/ExploreSidebar/mock';
 import { items as gamesMock } from '@/components/GameCardSlider/mock';
-import userEvent from '@testing-library/user-event';
 
 jest.mock('@/templates/Base', () => ({
   __esModule: true,
